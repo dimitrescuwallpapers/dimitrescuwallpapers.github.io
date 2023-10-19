@@ -108,8 +108,10 @@ h6 {
   color: #fff;
 }
 
-#navbar {
-  padding-right: 390px;
+@media (min-width: 1200px) {
+  #navbar {
+    padding-right: 390px;
+  }
 }
 
 #about {
