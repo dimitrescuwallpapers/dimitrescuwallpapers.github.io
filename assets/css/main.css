@@ -109,7 +109,7 @@ h6 {
 }
 
 #navbar {
-  padding-right: 320px;
+  padding-right: 390px;
 }
 
 #about {
@@ -379,7 +379,7 @@ h6 {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 1279px) {
   .navbar {
     padding: 0;
   }
@@ -839,10 +839,10 @@ h6 {
 
 @media (min-width: 1px) and (max-width: 769px){
   .gallery {
-    margin-left: 5%;
+    margin-left: 6.5%;
   }
   .gallery-item {
-    width: 95%;
+    width: 45%;
   }
 }
 @media (min-width: 770px) and (max-width: 990px){
