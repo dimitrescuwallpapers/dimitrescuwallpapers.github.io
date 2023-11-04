@@ -71,6 +71,25 @@ h6 {
   font-family: 'Pacifico', cursive;
   font-size: 40px;
 }
+
+.see-more .btn-see-more {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.see-more .btn-see-more:hover {
+  background: #665433;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -502,6 +521,13 @@ h6 {
   }
 }
 
+@media (min-width: 1200px) {
+  .col-xl-custom-5 {
+      flex: 0 0 auto;
+      width: 34%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
@@ -612,99 +638,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials {
-  margin-top: 80px;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  background: var(--color-secondary);
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 5px solid #474a4d;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.2);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
-
-@media (max-width: 1199px) {
-  .testimonials .swiper-slide-active {
-    opacity: 1;
-  }
-
-  .testimonials .swiper-pagination {
-    margin-top: 0;
-  }
-
-  .testimonials .testimonial-item {
-    margin: 40px 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials .swiper-slide-next {
-    opacity: 1;
-    transform: scale(1.12);
-  }
-}
 /*--------------------------------------------------------------
 # Featured Section
 --------------------------------------------------------------*/
@@ -862,157 +795,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
-
-.contact .info-item i {
-  font-size: 20px;
-  color: var(--color-primary);
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #222425;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h4 {
-  padding: 0;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #fff;
-}
-
-.contact .info-item:hover i {
-  background: var(--color-primary);
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: var(--color-primary);
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: var(--color-secondary);
-  text-align: center;
-  padding: 15px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--color-primary);
-  border-top-color: var(--color-secondary);
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 14px;
-  background-color: var(--color-secondary);
-  border: 1px solid #2e3133;
-  color: #fff;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: rgba(39, 167, 118, 0.8);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.see-more .btn-see-more {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
-}
-
-.see-more .btn-see-more:hover {
-  background: #665433;
-}
-
-/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -1036,4 +818,22 @@ h6 {
 
 .footer .credits a {
   color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: #000000;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#8b754d, #ceb88f ,#8b754d);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#4a3e26, #ceb88f ,#4a3e26);
+  border-radius: 10px;
 }
