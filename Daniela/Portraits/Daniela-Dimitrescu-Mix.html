@@ -23,24 +23,30 @@
     name="keywords" />
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon" />
+  <link href="/assets/img/favicon.webp" rel="icon" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
+  <!-- Non-Critical CSS Files -->
+  <script>
+    function loadCSS(url) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = url;
+      document.head.appendChild(link);
+    }
 
-  <!-- Vendor CSS Files -->
+    // Load non-critical stylesheets asynchronously
+    loadCSS('/assets/vendor/bootstrap-icons/bootstrap-icons.css');
+    loadCSS('/assets/vendor/glightbox/css/glightbox.min.css');
+    loadCSS('/assets/vendor/aos/aos.css');
+
+  </script>
+
+  <!-- Critical CSS Files -->
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
 
-  <!--  Main CSS File -->
+  <!-- Main CSS File -->
   <link href="/assets/css/main.css" rel="stylesheet" />
+  
 </head>
 
 <body>
@@ -49,7 +55,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="/index.html" class="logo d-flex align-items-center me-auto">
-        <img src="/assets/img/Logo.png" alt="Image">
+        <img src="/assets/img/Logo.webp" alt="Image">
         <h1 class="nav-heading">Dimitrescu Wallpapers</h1>
       </a>
 
@@ -89,814 +95,814 @@
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-1.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-2.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-3.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-4.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-5.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-6.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-7.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-8.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-9.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-10.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-11.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-12.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-13.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-14.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-15.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-16.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-17.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-18.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-19.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-20.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-21.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-22.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-23.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-24.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-25.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-26.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-27.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-28.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-29.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-30.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-31.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-32.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-33.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-34.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-35.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-36.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-37.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-38.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-39.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-40.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-41.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-42.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-43.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-44.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-45.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-46.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-47.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-48.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-49.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-50.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-51.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-52.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-53.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-54.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-55.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-56.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-57.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-58.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-59.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-60.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-61.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-62.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-63.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-64.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-65.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-66.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-67.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-68.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-69.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-70.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-71.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-72.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-73.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
       </div>
       <!-- End Gallery Item -->
       <div class="gallery-item">
-        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" class="img-fluid" alt="Image" />
+        <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" loading="lazy" class="img-fluid" alt="Image" />
         <div class="gallery-links d-flex align-items-center justify-content-center">
-          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" class="glightbox"
+          <a href="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" loading="lazy" class="glightbox"
             data-glightbox="zoomable: false">
-            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" class="img-fluid"
+            <img src="/assets/img/gallery/Daniela-Dimitrescu/Portraits/Mix/gallery-74.jpg" loading="lazy" class="img-fluid"
               alt="Image" />
           </a>
         </div>
@@ -926,7 +932,6 @@
 
   <!-- Vendor JS Files -->
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/aos/aos.js"></script>
   <script src="/assets/vendor/masonry/masonry.pkgd.min.js"></script>
@@ -942,7 +947,7 @@
       "name": "Dimitrescu Wallpapers",
       "url": "https://dimitrescuwallpapers.github.io/",
       "description": "Explore exquisite wallpapers featuring Bela, Cassandra, and Daniela Dimitrescu from Resident Evil Village. Immerse yourself in high-quality fan art of Lady Dimitrescu's vampire daughters. Transform your screen with the allure of these iconic characters.",
-      "image": "https://dimitrescuwallpapers.github.io/assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.jpg",
+      "image": "https://dimitrescuwallpapers.github.io/assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.jpg" loading="lazy",
       "author": {
         "@type": "Person",
         "name": "DEXBTHO"

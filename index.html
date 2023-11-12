@@ -23,21 +23,26 @@
     name="keywords" />
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon" />
+  <link href="./assets/img/favicon.webp" rel="icon" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
+  <!-- Non-Critical CSS Files -->
+  <script>
+    function loadCSS(url) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = url;
+      document.head.appendChild(link);
+    }
 
-  <!-- Vendor CSS Files -->
+    // Load non-critical stylesheets asynchronously
+    loadCSS('assets/vendor/bootstrap-icons/bootstrap-icons.css');
+    loadCSS('assets/vendor/glightbox/css/glightbox.min.css');
+    loadCSS('assets/vendor/aos/aos.css');
+
+  </script>
+
+  <!-- Critical CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
@@ -45,393 +50,411 @@
 </head>
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center  me-auto">
-          <img src="./assets/img/Logo.png" alt="Image">
-          <h1 class="nav-heading">Dimitrescu Wallpapers</h1>
-        </a>
+      <a href="index.html" class="logo d-flex align-items-center  me-auto">
+        <img src="./assets/img/Logo.webp" width="40px" height="40px" alt="Image">
+        <h1 class="nav-heading">Dimitrescu Wallpapers</h1>
+      </a>
 
-        <nav id="navbar" class="navbar mx-auto">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#stories">Stories</a></li>
-            <li><a href="#mods">My Mods</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav><!-- .navbar -->
+      <nav id="navbar" class="navbar mx-auto">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#mods">My Mods</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav><!-- .navbar -->
 
-        <div class="header-social-links">
-          <!-- <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a> -->
-          <a href="https://www.youtube.com/@danieladimitrescu1" target="_blank"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.pinterest.com/DEXBTHO123/" target="_blank"><i class="bi bi-pinterest"></i></a>
-        </div>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
+      <div class="header-social-links">
+        <!-- <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a> -->
+        <a href="https://www.youtube.com/@danieladimitrescu1" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.pinterest.com/DEXBTHO123/" target="_blank"><i class="bi bi-pinterest"></i></a>
       </div>
-    </header>
-    <!-- End Header -->
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <picture>
-            <source media="(max-width: 700px)"
-              srcset="./assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main-SM.jpg" class="d-block w-100"
-              alt="Image">
-            <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.jpg" class="d-block w-100"
-              alt="Image">
-          </picture>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <picture>
-            <source media="(max-width: 700px)" srcset="./assets/img/gallery/Bela-Dimitrescu/Previews/Bela-Main-SM.jpg"
-              class="d-block w-100" alt="Image">
-            <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Bela-Main.jpg" class="d-block w-100" alt="Image">
-          </picture>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <picture>
-            <source media="(max-width: 700px)"
-              srcset="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Cassandra-Main-SM.jpg" class="d-block w-100"
-              alt="Image">
-            <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Cassandra-Main.jpg" class="d-block w-100"
-              alt="Image">
-          </picture>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </header>
+  <!-- End Header -->
 
-    <main id="main" data-aos="fade" data-aos-delay="150">
-      <!-- ======= Gallery Section ======= -->
-      <section id="featured" class="featured">
-        <div class="container-fluid">
-          <h2 class="featured-heading text-center mb-5 mt-5">Featured Photos</h2>
-          <div class="row gy-4 justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <h3 class="text-center gallery-headings">Bela Dimitrescu</h3>
-              <div class="featured-item">
-                <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-1.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Bela/Edited/Bela-Dimitrescu-White.html">
-                    <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-1.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-2.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Bela/Portraits/Bela-Dimitrescu-White-Crown.html">
-                    <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-2.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-3.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Bela/Portraits/Bela-Dimitrescu-Bride-Black.html">
-                    <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-3.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-4.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Bela/Portraits/Bela-Dimitrescu-Mix.html">
-                    <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-4.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-5.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Bela/Portraits/Bela-Dimitrescu-Original.html">
-                    <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-5.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <h3 class="text-center gallery-headings">Cassandra Dimitrescu</h3>
-              <div class="featured-item">
-                <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-1.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Cassandra/Edited/Cassandra-Dimitrescu-White.html">
-                    <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-1.jpg"
-                      class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-2.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-White-Crown.html">
-                    <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-2.jpg"
-                      class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-3.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Bride-Black.html">
-                    <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-3.jpg"
-                      class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-4.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Mix.html">
-                    <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-4.jpg"
-                      class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-5.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Original.html">
-                    <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-5.jpg"
-                      class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <h3 class="text-center gallery-headings">Daniela Dimitrescu</h3>
-              <div class="featured-item">
-                <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-1.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Daniela/Edited/Daniela-Dimitrescu-White.html">
-                    <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-1.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-2.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Daniela/Portraits/Daniela-Dimitrescu-White-Crown.html">
-                    <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-2.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-3.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Daniela/Portraits/Daniela-Dimitrescu-Bride-Black.html">
-                    <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-3.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-4.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Daniela/Portraits/Daniela-Dimitrescu-Mix.html">
-                    <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-4.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-5.jpg" class="img-fluid"
-                  alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="/Daniela/Portraits/Daniela-Dimitrescu-Original.html">
-                    <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-5.jpg" class="img-fluid"
-                      alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Gallery Section -->
-      <div class="see-more mt-4 text-center">
-        <a href="gallery.html" class="btn-see-more mx-auto">See More</a>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <picture>
+          <source media="(max-width: 700px)"
+            srcset="./assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main-SM.webp" class="d-block w-100 h-100"
+            alt="Image">
+          <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.webp" class="d-block w-100 h-100"
+            alt="Image">
+        </picture>
       </div>
-      <!-- ======= Stories Section ======= -->
-      <section id="stories" class="featured">
-        <div class="container-fluid">
-          <h2 class="featured-heading text-center mb-5 mt-5">Stories</h2>
-          <div class="row gy-4 justify-content-center">
-            <div class="col-xl-custom-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">A Haunting Love <br> Daniela Dimitrescu x Male Reader</h3>
-              <div class="featured-item">
-                <img src="./assets/img/stories/haunting-love.png" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.wattpad.com/story/350865251-a-haunting-love-daniela-dimitrescu-x-male-reader" target="_blank">
-                    <img src="./assets/img/stories/haunting-love.png" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-custom-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Crimson Descent <br> Daniela Dimitrescu x Male Reader</h3>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/stories/crimson-descent.png" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.wattpad.com/story/342784194-crimson-descent-male-oc-x-daniela-dimitrescu" target="_blank">
-                    <img src=" ./assets/img/stories/crimson-descent.png" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-custom-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Forbidden Blood <br> Daniela Dimitrescu x Male Reader</h3>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/stories/forbidden-blood.png" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.wattpad.com/story/348173542-forbidden-blood-daniela-x-male-reader" target="_blank">
-                    <img src="./assets/img/stories/forbidden-blood.png" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-custom-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Secret Romance <br> Male OC x Cassandra Dimitrescu</h3>
-              <div class="featured-item mt-3">
-                <img src="./assets/img/stories/secret-romance.png" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.wattpad.com/story/341080979-secret-romance-male-oc-x-cassandra-dimitrescu" target="_blank">
-                    <img src="./assets/img/stories/secret-romance.png" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Stories Section -->
-      <!-- ======= Mods Section ======= -->
-      <section id="mods" class="featured">
-        <div class="container-fluid">
-          <h2 class="featured-heading text-center mb-5 mt-5">My Mods</h2>
-          <div class="row gy-4 justify-content-center">
-            <div class="col-xl-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Empress Daughters</h3>
-              <div class="featured-item">
-                <img src="./assets/img/mods/empress-daughters.jpg" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.nexusmods.com/residentevilvillage/mods/390" target="_blank">
-                    <img src="./assets/img/mods/empress-daughters.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Elegant Daughters</h3>
-              <div class="featured-item">
-                <img src="./assets/img/mods/elegant-daughters.jpg" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.nexusmods.com/residentevilvillage/mods/386" target="_blank">
-                    <img src=" ./assets/img/mods/elegant-daughters.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Demonic Daughters</h3>
-              <div class="featured-item">
-                <img src="./assets/img/mods/demonic-daughters.jpg" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.nexusmods.com/residentevilvillage/mods/385" target="_blank">
-                    <img src="./assets/img/mods/demonic-daughters.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-5 col-lg-6 col-md-6">
-              <h3 class="text-center gallery-headings">Scythe For Daughters</h3>
-              <div class="featured-item">
-                <img src="./assets/img/mods/scythe-for-daughters.jpg" class="img-fluid" alt="Image">
-                <div class="featured-links d-flex align-items-center justify-content-center">
-                  <a href="https://www.nexusmods.com/residentevilvillage/mods/393" target="_blank">
-                    <img src="./assets/img/mods/scythe-for-daughters.jpg" class="img-fluid" alt="Image">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Mods Section -->
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright 2023 <strong><span>DEXBTHO</span></strong>. All Rights Reserved
-        </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <picture>
+          <source media="(max-width: 700px)" srcset="./assets/img/gallery/Bela-Dimitrescu/Previews/Bela-Main-SM.webp" loading="lazy"
+            class="d-block w-100" alt="Image">
+          <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Bela-Main.webp" loading="lazy" class="d-block w-100 h-100"
+            alt="Image">
+        </picture>
       </div>
-    </footer>
-    <!-- End Footer -->
-
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
-
-    <div id="preloader">
-      <div class="line"></div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <picture>
+          <source media="(max-width: 700px)"
+            srcset="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Cassandra-Main-SM.webp" loading="lazy"
+            class="d-block w-100 h-100" alt="Image">
+          <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Cassandra-Main.webp" loading="lazy" class="d-block w-100 h-100"
+            alt="Image">
+        </picture>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
+  <main id="main" data-aos="fade" data-aos-delay="150">
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container-fluid">
+        <h2 class="featured-heading text-center mb-5 mt-5">Featured Photos</h2>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <h3 class="text-center gallery-headings">Bela Dimitrescu</h3>
+            <div class="featured-item">
+              <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-1.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Bela/Edited/Bela-Dimitrescu-White.html">
+                  <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-1.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-2.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Bela/Portraits/Bela-Dimitrescu-White-Crown.html">
+                  <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-2.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-3.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Bela/Portraits/Bela-Dimitrescu-Bride-Black.html">
+                  <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-3.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-4.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Bela/Portraits/Bela-Dimitrescu-Mix.html">
+                  <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-4.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-5.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Bela/Portraits/Bela-Dimitrescu-Original.html">
+                  <img src="./assets/img/gallery/Bela-Dimitrescu/Previews/Featured/Bela-5.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <h3 class="text-center gallery-headings">Cassandra Dimitrescu</h3>
+            <div class="featured-item">
+              <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-1.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Cassandra/Edited/Cassandra-Dimitrescu-White.html">
+                  <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-1.webp"
+                    loading="lazy" class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-2.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-White-Crown.html">
+                  <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-2.webp"
+                    loading="lazy" class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-3.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Bride-Black.html">
+                  <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-3.webp"
+                    loading="lazy" class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-4.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Mix.html">
+                  <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-4.webp"
+                    loading="lazy" class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-5.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Cassandra/Portraits/Cassandra-Dimitrescu-Original.html">
+                  <img src=" ./assets/img/gallery/Cassandra-Dimitrescu/Previews/Featured/Cassandra-5.webp"
+                    loading="lazy" class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <h3 class="text-center gallery-headings">Daniela Dimitrescu</h3>
+            <div class="featured-item">
+              <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-1.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Daniela/Edited/Daniela-Dimitrescu-White.html">
+                  <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-1.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-2.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Daniela/Portraits/Daniela-Dimitrescu-White-Crown.html">
+                  <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-2.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-3.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Daniela/Portraits/Daniela-Dimitrescu-Bride-Black.html">
+                  <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-3.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-4.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Daniela/Portraits/Daniela-Dimitrescu-Mix.html">
+                  <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-4.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-5.webp" loading="lazy"
+                class="img-fluid w-100 h-100" alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="/Daniela/Portraits/Daniela-Dimitrescu-Original.html">
+                  <img src="./assets/img/gallery/Daniela-Dimitrescu/Previews/Featured/Daniela-5.webp" loading="lazy"
+                    class="img-fluid w-100 h-100" alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Section -->
+    <div class="see-more mt-4 text-center">
+      <a href="gallery.html" class="btn-see-more mx-auto">Explore our photo gallery</a>
+    </div>
+    <!-- ======= Stories Section ======= -->
+    <section id="stories" class="featured">
+      <div class="container-fluid">
+        <h2 class="featured-heading text-center mb-5 mt-5">Stories</h2>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-custom-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">A Haunting Love <br> Daniela Dimitrescu x Male Reader</h3>
+            <div class="featured-item">
+              <img src="./assets/img/stories/haunting-love.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.wattpad.com/story/350865251-a-haunting-love-daniela-dimitrescu-x-male-reader"
+                  target="_blank">
+                  <img src="./assets/img/stories/haunting-love.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-custom-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Crimson Descent <br> Daniela Dimitrescu x Male Reader</h3>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/stories/crimson-descent.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.wattpad.com/story/342784194-crimson-descent-male-oc-x-daniela-dimitrescu"
+                  target="_blank">
+                  <img src=" ./assets/img/stories/crimson-descent.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-custom-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Forbidden Blood <br> Daniela Dimitrescu x Male Reader</h3>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/stories/forbidden-blood.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.wattpad.com/story/348173542-forbidden-blood-daniela-x-male-reader" target="_blank">
+                  <img src="./assets/img/stories/forbidden-blood.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-custom-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Secret Romance <br> Male OC x Cassandra Dimitrescu</h3>
+            <div class="featured-item mt-3">
+              <img src="./assets/img/stories/secret-romance.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.wattpad.com/story/341080979-secret-romance-male-oc-x-cassandra-dimitrescu"
+                  target="_blank">
+                  <img src="./assets/img/stories/secret-romance.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Stories Section -->
+    <!-- ======= Mods Section ======= -->
+    <section id="mods" class="featured">
+      <div class="container-fluid">
+        <h2 class="featured-heading text-center mb-5 mt-5">My Mods</h2>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Empress Daughters</h3>
+            <div class="featured-item">
+              <img src="./assets/img/mods/empress-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.nexusmods.com/residentevilvillage/mods/390" target="_blank">
+                  <img src="./assets/img/mods/empress-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Elegant Daughters</h3>
+            <div class="featured-item">
+              <img src="./assets/img/mods/elegant-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.nexusmods.com/residentevilvillage/mods/386" target="_blank">
+                  <img src=" ./assets/img/mods/elegant-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Demonic Daughters</h3>
+            <div class="featured-item">
+              <img src="./assets/img/mods/demonic-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.nexusmods.com/residentevilvillage/mods/385" target="_blank">
+                  <img src="./assets/img/mods/demonic-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-6">
+            <h3 class="text-center gallery-headings">Scythe For Daughters</h3>
+            <div class="featured-item">
+              <img src="./assets/img/mods/scythe-for-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                alt="Image">
+              <div class="featured-links d-flex align-items-center justify-content-center">
+                <a href="https://www.nexusmods.com/residentevilvillage/mods/393" target="_blank">
+                  <img src="./assets/img/mods/scythe-for-daughters.webp" loading="lazy" class="img-fluid w-100 h-100"
+                    alt="Image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Mods Section -->
+  </main>
+  <!-- End #main -->
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2023 <strong><span>DEXBTHO</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Schema.org -->
-    <script type="application/ld+json">
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script defer src="assets/vendor/masonry/masonry.pkgd.min.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script defer src="assets/js/main.js"></script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "WebSite",
       "name": "Dimitrescu Wallpapers",
       "url": "https://dimitrescuwallpapers.github.io/",
       "description": "Explore exquisite wallpapers featuring Bela, Cassandra, and Daniela Dimitrescu from Resident Evil Village. Immerse yourself in high-quality fan art of Lady Dimitrescu's vampire daughters. Transform your screen with the allure of these iconic characters.",
-      "image": "https://dimitrescuwallpapers.github.io/assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.jpg",
+      "image": "https://dimitrescuwallpapers.github.io/assets/img/gallery/Daniela-Dimitrescu/Previews/Daniela-Main.webp",
       "author": {
         "@type": "Person",
         "name": "DEXBTHO"
