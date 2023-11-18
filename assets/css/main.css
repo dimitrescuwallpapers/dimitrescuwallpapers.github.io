@@ -1,9 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playball&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playball&family=Sacramento&family=UnifrakturMaguntia&display=swap');
 
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -93,6 +90,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+
 .section-header {
   padding-bottom: 40px;
 }
@@ -127,9 +125,9 @@ h6 {
   color: #fff;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 642px) {
   #navbar {
-    padding-right: 390px;
+    margin-right: 15rem!important;
   }
 }
 
