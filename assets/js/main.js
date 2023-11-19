@@ -91,9 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  const lightboxElements = document.querySelectorAll('.gallery');
+  if (lightboxElements.length > 0) {
+    const glightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  }
+
 
   /**
    * Animation on scroll function and init
