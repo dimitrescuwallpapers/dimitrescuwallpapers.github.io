@@ -292,7 +292,7 @@ h6 {
 
 #preloader.loaded:before,
 #preloader.loaded:after {
-  animation: preloaderfinish 300ms ease-in-out 500ms forwards;
+  animation: preloaderfinish 400ms ease-in-out 400ms forwards;
 }
 
 @keyframes lineincrease {
@@ -796,6 +796,8 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  height: 80px;
+  width: 100%;
   margin-top: 30px;
   padding: 30px 0;
   font-size: 14px;
