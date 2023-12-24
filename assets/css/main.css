@@ -138,6 +138,28 @@ h6 {
 #about-img img {
   border-radius: 10px;
 }
+
+@media (max-width: 1399px) {
+  #about-img img {
+    position: relative;
+    top: 9vh;
+  }
+}
+
+@media (max-width: 1199px) {
+  #about-img img {
+    position: relative;
+    top: 14vh;
+  }
+}
+
+@media (max-width: 991px) {
+  #about-img img {
+    position: relative;
+    top: 0vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Page Header
 --------------------------------------------------------------*/
@@ -193,7 +215,8 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background: #7979792b;
+  backdrop-filter: blur(9px);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -207,7 +230,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: #665433;
+  background: #79797964;
   color: #fff;
 }
 
@@ -553,7 +576,7 @@ h6 {
   .navbar ul {
     position: absolute;
     inset: 0;
-    padding: 50px 0 10px 0;
+    padding: 160px 0 10px 0;
     margin: 0;
     backdrop-filter: blur(9px);
     background-color: rgb(0 0 0 / 0%);
