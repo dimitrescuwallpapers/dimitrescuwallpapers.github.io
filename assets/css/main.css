@@ -308,13 +308,17 @@ h6 {
   height: 100% !important;
 }
 
+#preloader.loaded .line,
 #preloader.loaded .line:after {
   opacity: 0;
 }
 
-#preloader.loaded:before,
-#preloader.loaded:after {
-  animation: preloaderfinish 400ms ease-in-out 400ms forwards;
+#preloader.loaded.start-animations:before {
+  animation: preloaderfinish-left 400ms ease-in-out forwards;
+}
+
+#preloader.loaded.start-animations:after {
+  animation: preloaderfinish-right 400ms ease-in-out forwards;
 }
 
 @keyframes lineincrease {
@@ -337,13 +341,27 @@ h6 {
   }
 }
 
-@keyframes preloaderfinish {
+@keyframes preloaderfinish-left {
   0% {
-    width: 50%;
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
   }
 
   100% {
-    width: 0%;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes preloaderfinish-right {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
   }
 }
 
@@ -825,9 +843,13 @@ h6 {
   }
 }
 
-@media (min-width: 314px) and (max-width: 437px){
+@media (min-width: 314px) and (max-width: 438px){
   .bela-gallery-heading {
-   margin-bottom: 37px; 
+    margin-bottom: 37px; 
+  }
+
+  .bela-featured-heading {
+    margin-bottom: 36px;
   }
 }
 

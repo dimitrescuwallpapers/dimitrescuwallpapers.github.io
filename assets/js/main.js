@@ -5,16 +5,21 @@ document.addEventListener('DOMContentLoaded', () => {
    * Preloader
    */
   const preloader = document.querySelector('#preloader');
+
   if (preloader) {
     window.addEventListener('load', () => {
       setTimeout(() => {
         preloader.classList.add('loaded');
       }, 200);
       setTimeout(() => {
-        preloader.remove();
-      }, 1000);
+        preloader.classList.add('start-animations');
+        setTimeout(() => {
+          preloader.remove();
+        }, 600);
+      }, 600);
     });
   }
+  
 
   /**
    * Mobile nav toggle
