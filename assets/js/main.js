@@ -99,10 +99,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxElements = document.querySelectorAll('.gallery');
   if (lightboxElements.length > 0) {
     const glightbox = GLightbox({
-      selector: '.glightbox'
+      selector: '.glightbox',
+      onOpen: () => {
+        addDownloadListener(glightbox);
+      },
     });
   }
 
+  function addDownloadListener(glightbox) {
+    const downButton = document.querySelector('.gdownload');
+
+    if (downButton) {
+      downButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        downloadCurrentImage(glightbox);
+      });
+    }
+  }
+
+  function downloadCurrentImage(glightbox) {
+    const currentSlide = glightbox.getActiveSlide();
+    const imageSrc = currentSlide.querySelector('.gslide-media img').getAttribute('src');
+    const fileName = "image.jpg";
+  
+    const link = document.createElement('a');
+    link.href = imageSrc;
+    link.download = fileName;
+  
+    link.type = "image/jpeg";
+  
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  
 
   /**
    * Animation on scroll function and init
